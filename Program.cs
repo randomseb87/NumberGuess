@@ -9,30 +9,27 @@ namespace NumberGuess
             while (true)
             {
 
-            Console.Write("Please pick a number: ");
+                 Console.Write("Please pick a number: ");
             
-            int number = int.Parse(Console.ReadLine());
+                 int number = int.Parse(Console.ReadLine());
 
-            const int correctNumber = 42;
+                   const int correctNumber = 42;
             
-
-
-            if (correctNumber == number)
-            {
-                Console.WriteLine("Congratulations, your number is correct.");
-                    break;
-            }
-            else if (correctNumber > number)
-            {
-                Console.WriteLine("I'm sorry, your number is to low.");
-            }
-            else if (correctNumber < number)
-            {
-                Console.WriteLine("I'm sorry, your number is to high.");
-            }
+                 if (correctNumber == number)
+                  {
+                      Console.WriteLine("Congratulations, your number is correct.");
+                           break;
+                  }
+                 else if (correctNumber > number)
+                  {
+                      Console.WriteLine("I'm sorry, your number is to low.");
+                  }
+                  else if (correctNumber < number)
+                  {
+                      Console.WriteLine("I'm sorry, your number is to high.");
+                  }
 
             }
-
             Console.ReadLine();
         }
     }
